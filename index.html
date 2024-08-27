@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Project (JS)</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+  <!-- Navbar Start -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="logo">
+        </div>
+        <nav class="list ms-auto d-none d-lg-block">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="cart ms-auto ms-lg-0 ps-3">
+          <div class="icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cartStatus">3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Navbar End -->
+
+  <!-- Banner Start -->
+  <section class="banner">
+    <div class="container">
+      <h1 class="text-center">WELCOME TO MY RESTAURANT</h1>
+    </div>
+  </section>
+  <!-- Banner End -->
+
+  <!-- Food start -->
+  <section class="food">
+    <h2 class="text-center">Chose Your Favorite Food</h2>
+    <div class="container">
+      <div class="row" id="row_div">
+        <!-- Keep this empty -->
+      </div>
+    </div>
+  </section>
+  <!-- Food end -->
+
+  <!-- Footer start -->
+  <footer class="footer">
+    <div class="container">
+      <p class="m-0 py-3 text-center">&copy; Nasrullah Mansur | All Right Reserved</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+
+  <!-- Popup Area Start -->
+
+  <!-- Modal -->
+  <div data-id="1" class="modal fade cart-modal" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 class="text-center">Your Cart Items</h3>
+          <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Image</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Total</th>
+                  <th scope="col">Action</th> 
+                </tr>
+              </thead>
+              <tbody id="table-item-body">
+                <!-- Keep this empty -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <h3 class="w-100 text-end pb-3">Total Amount: $<span id="final_total">0</span></h3>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Checkout</button>
+          <button id="clear_cart" type="button" class="btn btn-primary">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Popup Area End -->
+
+    <h1 class="myh1"></h1>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
